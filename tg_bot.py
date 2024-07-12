@@ -7,8 +7,9 @@ import asyncio
 
 class Bot:
     def __init__(self):
-        os.chdir(os.path.dirname(__file__))
-        with open(r'./settings.json', 'r') as f:
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        settings_path = os.path.join(script_dir, 'settings.json')
+        with open(settings_path, 'r') as f:
             settings = json.loads(f.read())
         self.chat_id = settings['chat_id']
         self.bot = TelegramBot(token=settings['bot_token'])
