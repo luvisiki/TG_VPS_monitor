@@ -14,6 +14,17 @@ Python库：python-telegram-bot, psutil
 
 `pip install python-telegram-bot psutil`
 
+### 工具版本
+`vnStat image output 2.6`
+
+`vnStat 2.6`
+
+`Python 3.8.10`
+
+`psutil Version: 5.9.8`
+
+`python-telegram-bot Version: 21.3`
+
 ### 配置文件
 配置文件为`settings.json`根据注释填入对应信息即可
 
